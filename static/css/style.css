@@ -1,0 +1,1392 @@
+/*--------------------------------------------------------------------- Nom du fichier: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- Importation des polices ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+@font-face {
+    font-family: "Righteous";
+    src: url("../fonts/BalooChettan-Regular.ttf");
+    src: url("../fonts/BalooChettan-Regular.ttf");
+}
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- Importation des fichiers ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(swiper.min.css);
+@import url(slick.css);
+@import url(jquery.fancybox.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- Configuration de la structure de base ---------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Style des liens */
+a {
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/* Style des titres (h1 à h6) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: normal;
+    color: #111111;
+    margin: 0;
+}
+
+/* Taille des titres */
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 13px;
+}
+
+/* Box-sizing pour tous les éléments */
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Style des liens à l'intérieur des titres */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+    text-decoration: none !important;
+    opacity: 1;
+}
+
+/* Style pour le focus sur les boutons */
+button:focus {
+    outline: none;
+}
+
+/* Style pour les listes non ordonnées, listes ordonnées et éléments de liste */
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+/* Style pour les paragraphes */
+p {
+    margin: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/* Style pour les liens */
+a {
+    color: #222222;
+    text-decoration: none;
+    outline: none !important;
+}
+
+/* Style pour les liens et les boutons */
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/* Style pour les images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style pour le focus sur les éléments */
+:focus {
+    outline: 0;
+}
+
+/* Classe utilitaire pour supprimer le padding en bas */
+.paddind_bottom_0 {
+    padding-bottom: 0 !important;
+}
+
+/* Style pour les boutons personnalisés */
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #ddd;
+    padding: 12px 40px;
+    font-size: 16px;
+}
+
+/* Style pour les éléments avec la classe .lead */
+.lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767676;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour les contrôles de formulaire lorsqu'ils sont en focus */
+.form-control:focus {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+/* Style pour les entrées de formulaire dans la barre de navigation */
+.navbar-form input {
+    border: none !important;
+}
+
+/* Style pour les badges */
+.badge {
+    font-weight: 500;
+}
+
+/* Style pour les citations */
+blockquote {
+    margin: 20px 0 20px;
+    padding: 30px;
+}
+
+/* Style pour les boutons */
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Style pour les éléments ayant la classe .full */
+.full {
+    float: left;
+    width: 100%;
+}
+
+/* Style pour le padding de mise en page */
+.layout_padding {
+    padding-top: 90px;
+    padding-bottom: 0px;
+}
+
+/* Style pour le padding à 0 */
+.padding_0 {
+    padding: 0px;
+}
+
+/* Section de style pour le haut de l'en-tête */
+.header_top_section {
+    width: 100%;
+    display: flex;
+    background-color: #07092f;
+    height: auto;
+    padding: 20px 0px;
+}
+
+/* Style pour le contenu principal du haut de l'en-tête */
+.header_top_main {
+    display: flex;
+}
+
+/* Style pour le texte d'appel */
+.call_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Style pour les liens dans le texte d'appel */
+.call_text a {
+    color: #ffffff;
+}
+
+/* Style pour les liens survolés dans le texte d'appel */
+.call_text a:hover {
+    color: #fda417;
+}
+
+/* Style pour le texte d'appel 1 */
+.call_text_1 {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: right;
+}
+
+/* Style pour les liens dans le texte d'appel 1 */
+.call_text_1 a {
+    color: #ffffff;
+}
+
+/* Style pour les liens survolés dans le texte d'appel 1 */
+.call_text_1 a:hover {
+    color: #fda417;
+}
+
+/* Style pour le texte d'appel 2 */
+.call_text_2 {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: right;
+    text-align: center;
+}
+
+/* Styles pour la section du haut de l'en-tête (header top section) */
+.call_text_2 a {
+    color: #ffffff;
+}
+
+.call_text_2 a:hover {
+    color: #fda417;
+}
+
+.padding_left_15 {
+    padding-left: 10px;
+}
+/* Fin de la section du haut de l'en-tête */
+
+
+/* Styles pour la section de l'en-tête (header section) */
+.header_section {
+    width: 100%;
+    float: left;
+    background-image: url(../images/banner-bg.png);
+    height: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.header_bg {
+    background: #1f1f1f;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.logo {
+    width: auto;
+}
+
+.ml-auto,
+.mx-auto {
+    margin-left: auto !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #fcfefe;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fda417;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fda417;
+}
+
+.navbar {
+    padding: 30px 0px 30px 0px;
+}
+
+.login_text {}
+
+.login_text ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.login_text li {
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0px 30px;
+}
+
+.login_text li a {
+    color: #ffffff;
+}
+
+.login_text li a:hover {
+    color: #fda417;
+}
+
+.quote_btn {
+    width: 170px;
+    float: left;
+}
+
+.quote_btn a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #fda417;
+    border-radius: 40px;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.quote_btn a:hover {
+    background-color: #ffffff;
+    color: #252525;
+}
+/* Fin de la section de l'en-tête */
+
+
+/* Styles pour la section de la bannière (banner section) */
+.banner_section {
+    width: 100%;
+    float: left;
+    padding: 90px 0px;
+}
+
+.banner_taital_main {
+    width: 43%;
+    float: left;
+}
+
+.banner_taital {
+    width: 100%;
+    float: left;
+    font-size: 60px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 0px;
+    line-height: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn_main {
+    width: 100%;
+    display: flex;
+}
+
+.started_text {
+    width: 180px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.started_text a {
+    width: 100%;
+    float: left;
+    padding: 10px 10px;
+    color: #ffffff;
+    background-color: #0b0b0b;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+.started_text a:hover {
+    color: #ffffff;
+    background-color: #fda417;
+}
+
+.started_text.active a {
+    color: #ffffff;
+    background-color: #fda417;
+}
+
+#my_slider a.carousel-control-prev {
+    left: 30px;
+    top: 180px;
+    right: 0px;
+}
+
+#my_slider a.carousel-control-next {
+    right: 0px;
+    top: 120px;
+    left: 30px;
+    color: #ffffff;
+    background-color: #f8c30b;
+}
+/* Fin de la section de la bannière */
+
+/* Styles pour les contrôles de carrousel (carousel controls) */
+#my_slider .carousel-control-next,
+#my_slider .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    background: #ffffff;
+    opacity: 1;
+    font-size: 40px;
+    color: #070606;
+    border-radius: 100px;
+}
+
+#my_slider .carousel-control-next:focus,
+#my_slider .carousel-control-next:hover,
+#my_slider .carousel-control-prev:focus,
+#my_slider .carousel-control-prev:hover {
+    color: #ffffff;
+    background-color: #f8c30b;
+}
+/* Fin de la section du carrousel */
+
+
+/* Styles pour la section à propos (about section) */
+.about_section {
+    width: 100%;
+    float: left;
+    padding: 90px 0px 0px 0px;
+}
+
+.about_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #3b3a3a;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+.about_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #5a5959;
+    margin-left: 0px;
+}
+
+.about_img {
+    width: 100%;
+    float: left;
+    background-image: url(../images/about-img.png);
+    height: auto;
+    background-size: cover;
+    padding: 0px 0px 0px 0px;
+}
+
+.video_bt {
+    width: 100%;
+    padding: 155px 0px;
+}
+
+.play_icon img {
+    width: 80px;
+}
+
+.play_icon {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+
+.play_icon::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    width: 90px;
+    height: 90px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(253, 164, 23, 0.8);
+    border-radius: 100%;
+    animation: fadeEffect 1.3s infinite ease;
+    box-shadow: 0px 0px 10px 0px;
+    right: 0px;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+/* Animation keyframes */
+@keyframes fadeEffect {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* Styles for the 'read more' button */
+.read_bt_1 {
+    width: 180px;
+    float: left;
+    margin-top: 20px;
+}
+
+.read_bt_1 a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    background-color: #282828;
+    color: #ffffff;
+    padding: 10px 0px;
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+.read_bt_1 a:hover {
+    background-color: #fda417;
+    color: #ffffff;
+}
+
+/* End of 'read more' button styles */
+
+
+/* End of 'about' section */
+
+
+/* Start of 'services' section */
+
+.services_section {
+    width: 100%;
+    float: left;
+}
+
+.services_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #1b1b1b;
+    font-weight: bold;
+    text-align: center;
+}
+
+.services_text_1 {
+    width: 100%;
+    font-size: 16px;
+    margin: 0 auto;
+    color: #1f1f1f;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.services_text {
+    width: 100%;
+    font-size: 14px;
+    margin: 0px;
+    color: #1b1b1b;
+    padding-top: 20px;
+}
+
+.services_section_2 {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.box_main {
+    width: 100%;
+    background-color: #ffffff;
+    height: auto;
+    padding: 40px 20px 40px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.box_main:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0px;
+}
+
+.box_main.active {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0px;
+}
+
+.service_img {
+    width: 30%;
+    min-height: 71px;
+}
+
+.development_text {
+    width: 100%;
+    font-size: 24px;
+    color: #1b1b1b;
+    font-weight: bold;
+    padding: 20px 0px 0px 0px;
+    text-transform: uppercase;
+    min-height: 80px;
+}
+
+.service_img img {
+    min-height: 80px;
+}
+
+.readmore_bt {
+    width: 140px;
+    padding-top: 30px;
+}
+
+.readmore_bt a {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #fda51a;
+    padding: 15px 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.readmore_bt a:hover {
+    color: #252525;
+}
+
+/* End of 'services' section */
+
+
+/* Start of 'projects' section */
+
+.projects_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 90px;
+}
+
+.projects_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #192955;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.projects_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #5a5959;
+    margin: 0px;
+}
+
+.projects_section_2 {
+    padding: 50px 0px;
+    width: 100%;
+}
+
+.pets_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 310px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(45, 45, 45, 0.5);
+    margin: 0 auto;
+}
+
+.container_main {
+    position: relative;
+}
+
+.container_main:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.some_text {
+    color: #fefefd;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 0;
+    font-weight: bold;
+}
+
+i.fa.fa-link {
+    background: #0fbdd7;
+    padding: 20px 20px 18px 20px;
+    border-radius: 100%;
+}
+
+.padding_right0 {
+    padding-right: 0px;
+}
+
+.development_box {
+    width: 100%;
+    background: red;
+    height: auto;
+    background-size: cover;
+}
+
+.work_text {
+    width: 100%;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Styles for dummy text */
+.dummy_text {
+    width: 100%;
+    font-size: 14px;
+    margin: 0px;
+    color: #ffffff;
+}
+
+/* Styles for project main */
+.project_main {
+    width: 100%;
+    padding: 20px;
+    background-color: #fda417;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: -2px;
+    position: relative;
+}
+
+.project_main:hover {
+    background-color: #252525;
+}
+
+/* Styles for upcoming section */
+.upcomeing_section {
+    width: 100%;
+    float: left;
+    background-color: #ff6262;
+    height: auto;
+    padding: 0px 50px 50px 50px;
+}
+
+/* Styles for video menu */
+.video_menu {
+    width: 100%;
+    float: left;
+}
+
+.video_menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.video_menu li a {
+    float: left;
+    font-size: 18px;
+    color: #464646;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.video_menu li a:hover {
+    color: #ffffff;
+    background-color: #ff6262;
+}
+
+.video_menu li.active a {
+    color: #ffffff;
+    background-color: #ff6262;
+}
+
+/* Styles for hover main */
+.hover_main {
+    width: 100%;
+    float: left;
+    transition: .3s all;
+}
+
+.hover_main:hover {
+    transform: translateY(30px);
+}
+
+/* Styles for projects section tab content */
+.projects_section .tab-content {
+    background-color: #ff6262;
+}
+
+/* Styles for projects section ul */
+.projects_section ul {
+    margin-bottom: 0;
+    float: left;
+}
+
+/* Styles for projects section nav link */
+.projects_section ul .nav-link {
+    color: #000;
+    background-color: #fff;
+    padding: 12px 10px;
+    width: 145px;
+    text-align: center;
+    margin: 0px 0px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.projects_section ul .nav-link.active {
+    background-color: #fda417;
+    color: #fff;
+}
+
+/* End of projects section */
+
+
+/* Start of testimonial section */
+
+.testimonial_section {
+    width: 100%;
+    float: left;
+    background-color: #252525;
+    height: auto;
+    padding: 90px 0px 150px 0px;
+    background-size: 100%;
+}
+
+.testimonial_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testimonial_section_2 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+}
+
+.client_name_text {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.textimonial_text {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px;
+    color: #0d0d0d;
+    margin: 0px;
+    text-align: left;
+    border-radius: 4px;
+}
+
+#costum_slider a.carousel-control-next {
+    right: -60px;
+    left: 0px;
+    top: 500px;
+}
+
+/* Styles for carousel control previous button */
+#costum_slider a.carousel-control-prev {
+    left: -60px;
+    right: 0px;
+    top: 500px;
+    color: #fff;
+    background-color: #fda417;
+}
+
+/* Styles for carousel control next and previous buttons */
+#costum_slider .carousel-control-next,
+#costum_slider .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    background: #ffffff;
+    opacity: 1;
+    font-size: 30px;
+    color: #252525;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 100px;
+}
+
+/* Styles for carousel control next and previous buttons on focus and hover */
+#costum_slider .carousel-control-next:focus,
+#costum_slider .carousel-control-next:hover,
+#costum_slider .carousel-control-prev:focus,
+#costum_slider .carousel-control-prev:hover {
+    color: #fff;
+    background-color: #fda417;
+}
+
+/* End of testimonial section */
+
+/* Start of contact section */
+
+.contact_section {
+    width: 100%;
+    float: left;
+}
+
+.contact_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #333333;
+    padding-left: 100px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 90px;
+}
+
+.mail_section_1 {
+    width: 100%;
+    float: left;
+    padding-left: 85px;
+    padding-top: 30px;
+}
+
+.mail_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #c5c8c7;
+    border: 0px;
+    background-color: transparent;
+    padding: 8px 15px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 10px 0px #cfcfcf;
+}
+
+input.mail_text::placeholder {
+    color: #c5c8c7;
+}
+
+.massage-bt {
+    color: #c5c8c7;
+    width: 100%;
+    height: 110px;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 40px 15px 0px 15px;
+    border: 0px;
+    box-shadow: 0px 0px 10px 0px #cfcfcf;
+}
+
+textarea#comment.massage-bt::placeholder {
+    color: #c5c8c7;
+}
+
+.send_bt {
+    width: 170px;
+    float: left;
+}
+
+.send_bt a {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #fda417;
+    padding: 12px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    display: block;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+.send_bt a:hover {
+    color: #ffffff;
+    background-color: #252525;
+}
+
+.contact_img {
+    width: 100%;
+    float: left;
+}
+
+.padding_left_15 {
+    padding-right: 0px;
+}
+
+/* End of contact section */
+
+/* Start of footer section */
+
+.footer_section {
+    width: 100%;
+    float: left;
+    background-color: #1f1f1f;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.footer_section_2 {
+    width: 100%;
+    float: left;
+}
+
+/* Styles pour le texte utile */
+.useful_text {
+    width: 100%;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styles pour le texte de remplissage */
+.lorem_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styles pour le texte de localisation */
+.location_text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.location_text ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    text-align: center;
+}
+
+.location_text li {
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0px 120px 30px 120px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.location_text li a {
+    color: #ffffff;
+}
+
+.location_text li a:hover {
+    color: #fda417;
+}
+
+.location_text li.active a {
+    color: #fda417;
+}
+
+.padding_15 {
+    font-size: 30px;
+}
+
+/* Styles pour les icônes sociales */
+.social_icon {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social_icon ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.social_icon li {
+    float: left;
+}
+
+.social_icon li a {
+    float: left;
+    padding: 5px 15px;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 100%;
+    font-size: 22px;
+    margin-right: 5px;
+    width: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social_icon li a:hover {
+    background-color: #fda417;
+    color: #ffffff;
+}
+
+/* Styles pour la mise à jour du courrier électronique */
+.update_mail {
+    color: #918f8f;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    padding: 10px 20px 0px 20px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-top: 20px;
+    border-radius: 40px;
+}
+
+/* Styles pour le bouton d'abonnement */
+.subscribe_bt {
+    width: 170px;
+    float: left;
+    padding-top: 30px;
+}
+
+.subscribe_bt a {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 0px;
+    background-color: #fda417;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.subscribe_bt a:hover {
+    color: #252525;
+    background-color: #ffffff;
+}
+/* Styles pour la section du menu principal du pied de page */
+.footer_menu_main {
+    width: 100%;
+    float: left;
+}
+
+/* Styles pour le conteneur du menu du pied de page */
+.footer_menu {
+    width: 77%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styles pour la liste du menu du pied de page */
+.footer_menu ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styles pour les éléments de la liste du menu du pied de page */
+.footer_menu li {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px 0px 0px 0px;
+    flex-basis: 50%;
+}
+
+/* Styles pour les liens dans le menu du pied de page */
+.footer_menu li a {
+    color: #ffffff;
+}
+
+/* Styles pour les liens survolés dans le menu du pied de page */
+.footer_menu li a:hover {
+    color: #fda417;
+}
+
+/* Styles pour les liens actifs dans le menu du pied de page */
+.footer_menu li.active a {
+    color: #f9bc19;
+}
+
+/* Styles pour la section du droit d'auteur */
+/* footer section end */
+.copyright_section {
+    width: 100%;
+    float: left;
+    background-color: #ffffff;
+    height: auto;
+}
+
+/* Styles pour le texte du droit d'auteur */
+.copyright_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    margin: 15px 0px;
+    color: #252525;
+    text-align: center;
+}
+
+/* Styles pour les liens dans le texte du droit d'auteur */
+.copyright_text a {
+    color: #252525;
+}
+
+/* Styles pour les liens survolés dans le texte du droit d'auteur */
+.copyright_text a:hover {
+    color: #0fbdd7;
+}
+/* copyright section end */
+
+/* Styles pour la marge en haut de 90px */
+.margin_top90 {
+    margin-top: 90px;
+}
+/* Style pour les modales */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
