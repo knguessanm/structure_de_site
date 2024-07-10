@@ -73,3 +73,8 @@ HTTP et gérer les routes des différentes pages vers les contrôleurs correspon
  Les fichiers HTML, 
 CSS et JavaScript dans les dossiers views/ et static/
  sont utilisés pour définir l'interface utilisateur et son comportement.
+
+ le fichier base.html, regroupe tous les imports pour animer le site , dans notre cas nous sommes aller sur le site de boostrap. ce sont des frameworks
+
+ https://getbootstrap.com/ 
+ pour pouvoir utiliser boostrap il faut au péalable installé des imports dans le terminal
